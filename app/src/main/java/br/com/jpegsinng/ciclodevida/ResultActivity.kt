@@ -10,10 +10,9 @@ class ResultActivity : AppCompatActivity() {
         val binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val animal = intent.getStringExtra("animal") ?: "desconhecida"
-        val breed = intent.getStringExtra("breed") ?: "desconhecida"
-        binding.textMessage.text = {
+        val animal = intent.getStringExtra("animal")
+        val breed = intent.getStringExtra("breed")
+        binding.textMessage.text =
             getString(R.string.result_screen, animal, breed)
-        }.toString()
     }
 }
