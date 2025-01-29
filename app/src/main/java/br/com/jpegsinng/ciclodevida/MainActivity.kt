@@ -2,6 +2,7 @@ package br.com.jpegsinng.ciclodevida
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.jpegsinng.ciclodevida.databinding.ActivityMainBinding
@@ -28,5 +29,15 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("CDV", "onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("CDV", "onResume")
     }
 }
