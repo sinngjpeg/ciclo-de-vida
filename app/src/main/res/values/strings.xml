@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ciclodevida</string>
+    <string name="edit_animal">Nome do Animal</string>
+    <string name="edit_breed">Raça</string>
+    <string name="txt_animal_title">Qual seu animal?</string>
+    <string name="button_send">Enviar</string>
+    <string name="result_screen">O seu animal é: um %1$s da raça: %2$s.</string>
+</resources>
